@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /* makes it possible to center the div within the full screen */
+    display: flex;
+    justify-content: center;
+    /* centers horizontally */
+    align-items: center;
+    /* centers vertically within the content*/
+    /* justify-content: center (vertical centering in column direction, or horizontal in row direction)
+        align-items: center (the other direction)
+        But if the body’s height = just the height of .maindiv,
+        then there’s no extra vertical space to move .maindiv to the center —
+        so it stays stuck at the top. 
+        then the height field will tell take entire viewport height(whole screen).*/
+    background-color: #f5f5f5;
+    /* optional: a neutral page background */
+}
+
+.maindiv {
+    background-color: antiquewhite;
+    /* color applies only to this box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    /* space inside the box */
+    border-radius: 10px;
+    /* optional for nicer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* optional subtle shadow */
+}
+#add{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#minus{
+    cursor: pointer;
+}
