@@ -32,8 +32,8 @@ export default function AllPostDisplay() {
                                 boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
                                 transition: "0.2s",
                             }}
-                            // e.target → the button
-                            //e.currentTarget → the div
+                            // e.target → depends if we click on title its title or it will be body
+                            //e.currentTarget === <Link>
                             onMouseEnter={(e) => {
                                 console.log(e.currentTarget)
                                 e.currentTarget.style.transform = "translateY(-4px)";
