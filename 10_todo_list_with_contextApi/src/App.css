@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* without tailwing to strike the word we can use
+normal state */
+
+/* normal state */
+/* .todo-text {
+  color: #000;
+} */
+
+/* completed state */
+/* .todo-completed {
+  text-decoration: line-through;
+  color: #9ca3af; /* light gray */
+/*} */
+
+/* and in the class name i can mention as className = {`${todo.completed? "todo-completed":"todo-text"}`} */
